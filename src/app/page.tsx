@@ -30,7 +30,7 @@ export default function Home() {
             <p className="md:mt-4 mt-0 text-center text-xl font-bold pt-4 md:pt-32">Tito Solutions Intern Software Developer</p>
             <div className="justify-self-center h-0.5 bg-gray-950 w-10/12 mt-0"></div>
             <div className="flex justify-center">
-              <a href="#projects" className="mt-8 bg-black text-white font-bold py-2 px-4 w-[100px] justify-center border-0 hover:bg-gray-800 transition duration-300">Projects</a>
+              <a href="#project" className="mt-8 bg-black text-white font-bold py-2 px-4 w-[100px] justify-center border-0 hover:bg-gray-800 transition duration-300">Projects</a>
             </div>
           </div>
         </section>
