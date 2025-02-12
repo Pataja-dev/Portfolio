@@ -2,60 +2,6 @@
 // "use client";
 import Link from 'next/link';
 import Image from 'next/image';
-// import { Navbar} from "flowbite-react";
-
-// const Navbars = () => {
-//   return (
-//   //   <nav className="bg-stone-400  sticky top-0 start-0 z-50">
-//   //   <div className=" mx-auto px-4 py-4">
-//   //     <div className="flex justify-between items-center ">
-//   //       <div className="text-xl font-bold">
-//   //       <Link href="/">
-//   //             <Image
-//   //               src="/logo.png" 
-//   //               alt="Logo"
-//   //               width={150} 
-//   //               height={50} 
-//   //               className="cursor-pointer justify-self-start" 
-//   //             />
-//   //           </Link>
-//   //       </div>
-//   //       <div className="space-x-10 pr-20">
-//   //         <Link href="/" className=" text-stone-900 hover:text-stone-500">Home</Link>
-//   //         <Link href="#skills" className=" text-stone-900 hover:text-stone-500">Skills</Link>
-//   //         <Link href="#projects" className=" text-stone-900 hover:text-stone-500">Projects</Link>
-//   //         <Link href="#contact" className=" text-stone-900 hover:text-stone-500">Contact</Link>
-//   //       </div>
-//   //     </div>
-//   //   </div>
-//   // </nav>
-//   <Navbar fluid rounded>
-//   <Navbar.Brand href="https://flowbite.com/">
-//     <img
-//       src="https://flowbite.com/docs/images/logo.svg"
-//       className="mr-3 h-6 sm:h-9"
-//       alt="Flowbite Logo"
-//     />
-//     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-//       Flowbite
-//     </span>
-//   </Navbar.Brand>
-//   <Navbar.Toggle />
-//   <Navbar.Collapse>
-//     <Navbar.Link href="/navbars" active>
-//       Home
-//     </Navbar.Link>
-//     <Navbar.Link href="/navbars">About</Navbar.Link>
-//     <Navbar.Link href="/navbars">Services</Navbar.Link>
-//     <Navbar.Link href="/navbars">Pricing</Navbar.Link>
-//     <Navbar.Link href="/navbars">Contact</Navbar.Link>
-//   </Navbar.Collapse>
-// </Navbar>
-
-//   );
-// };
-
-// export default Navbars;
 
 import React, { useEffect, useRef } from 'react';
 
