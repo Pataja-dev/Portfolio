@@ -1,4 +1,5 @@
 'use client';
+import '../app/globals.css';
 import Image from "next/image";
 import Navbar from "@/ui/app/navbar";
 import Footer from "@/ui/app/footer";
