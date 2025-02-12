@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         </div>
         <div>
           <h2 className="text-xl font-bold">Follow Me</h2>
-          <p className="mt-2">LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" className="text-blue-600 hover:underline">yourprofile</a></p>
+          <p className="mt-2">LinkedIn: <a href="https://www.linkedin.com/in/john-lloyd-glee-35123020a/" className="text-blue-600 hover:underline">John Lloyd Glee</a></p>
           <p>GitHub: <a href="https://github.com/Pataja-dev" className="text-blue-600 hover:underline">Pataja-dev</a></p>
         </div>
       </div>
