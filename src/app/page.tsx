@@ -1,6 +1,5 @@
 'use client'
 import Image from "next/image";
-import Link from 'next/link';
 import Navbar from "@/ui/app/navbar";
 import Footer from "@/ui/app/footer";
 export default function Home() {
@@ -106,7 +105,7 @@ export default function Home() {
     <section id="contact" className="py-32">
   <div className="max-w-7xl mx-auto px-4 text-center">
     <h2 className="text-5xl font-bold mb-6 pb-10">My Contact</h2>
-    <p className="text-light mb-5 text-justify text-gray-700">
+    <p className="text-light mb-5 text-justify text-stone-900">
       I'd love to connect with you! Whether you have a specific project in mind, are interested in collaborating, or simply want to learn more about my work, please don't hesitate to reach out.
     </p>
   </div>
