@@ -57,8 +57,6 @@ import Image from 'next/image';
 
 // export default Navbars;
 
-
-// components/Navbar.tsx
 import React, { useEffect, useRef } from 'react';
 
 const Navbar: React.FC = () => {
