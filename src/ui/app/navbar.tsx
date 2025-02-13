@@ -20,6 +20,13 @@ const Navbar: React.FC = () => {
       }
     };
 
+    // Hide the navbar when a nav link is clicked
+    const handleNavLinkClick = () => {
+      if (navbarDropdownRef.current) {
+        navbarDropdownRef.current.classList.add('hidden');
+      }
+    };
+
     // Toggle the dropdown menu
     const handleDropdownToggle = () => {
       if (dropdownMenuRef.current) {
@@ -34,6 +41,12 @@ const Navbar: React.FC = () => {
     if (dropdownNavbarLink) {
       dropdownNavbarLink.addEventListener('click', handleDropdownToggle);
     }
+    
+    // Add event listeners to nav links
+    const navLinks = document.querySelectorAll('#navbar-dropdown a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', handleNavLinkClick);
+    });
 
     // Cleanup event listeners on component unmount
     return () => {
