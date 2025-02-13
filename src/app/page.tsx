@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 py-0">
+      <div className="max-w-7xl mx-auto px-4 py-0 ">
         {/* Home Content */}
         <section id="home" className="py-10 pb-12 flex flex-col md:flex-row ">
           {/* Image Column */}
@@ -74,11 +74,11 @@ export default function Home() {
         </section>
 
         {/* Thank You */}
-        <section className="py-10 pb-12 flex flex-col md:flex-row items-center">
+        <section className="md:py-10 pb-12 flex flex-col md:flex-row items-center">
           {/* Text Column */}
-          <div className="md:w-1/2 md:pl-7 mt-4 md:mt-0 p-40 md:p-5 justify-center h-full">
+          <div className="sm:w-1/2 p-auto mt-4 md:mt-0  md:p-5 justify-center h-full">
             <h1 className="text-5xl font-bold text-center">Thank You</h1>
-            <p className="mt-11 text-center">Thank you for visiting my online portfolio! I truly appreciate you taking the time to explore my work and learn more about my background, skills, and projects. I've put a lot of effort into showcasing my best work and highlighting what I'm passionate about, so I hope you found something that resonated with you. Whether you're a potential client, collaborator, or just curious about what I do, I'm always open to connecting. Please feel free to reach out with any questions, comments, or inquiries you may have. I'd love to hear from you!</p>
+            <p className="mt-11 sm:text-center">Thank you for visiting my online portfolio! I truly appreciate you taking the time to explore my work and learn more about my background, skills, and projects. I've put a lot of effort into showcasing my best work and highlighting what I'm passionate about, so I hope you found something that resonated with you. Whether you're a potential client, collaborator, or just curious about what I do, I'm always open to connecting. Please feel free to reach out with any questions, comments, or inquiries you may have. I'd love to hear from you!</p>
           </div>
           <div className="md:w-1/2">
             <Image
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="py-32">
+        <section id="contact" className="md:py-32 py-10">
           <div className="max-w-7xl mx-auto px-4 text-center">
             <h2 className="text-5xl font-bold mb-6 pb-10">My Contact</h2>
             <p className="text-light mb-5 text-justify text-stone-900">
