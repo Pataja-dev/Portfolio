@@ -18,7 +18,7 @@ export default function Home() {
           <div className="md:w-1/2">
             <Image
               src="/me.png"
-              alt="John Lloyd Glee"
+              alt="John Lloyd Malit Glee"
               width={542}
               height={630}
               className="rounded-lg"
