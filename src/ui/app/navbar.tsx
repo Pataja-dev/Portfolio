@@ -43,7 +43,7 @@ const handleScroll = () => {
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/logo.png"
+            src={darkMode ? "/logo_white.png" : "/logo.png"}
             alt="Logo"
             width={150}
             height={50}

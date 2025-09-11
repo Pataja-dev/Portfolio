@@ -3,34 +3,34 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-neutral-100 dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-700 py-8">
+    <footer className="bg-zinc-900 dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-700 py-8">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
         
         {/* Contact Info */}
         <div className="text-left space-y-2">
-          <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-100">
+          <h2 className="text-xl font-bold text-orange-500 dark:text-neutral-100">
             Contact Information
           </h2>
-          <p className="text-neutral-700 dark:text-neutral-300">
+          <p className="text-neutral-200 dark:text-neutral-300">
             Email: <a href="mailto:johnloydglee26@gmail.com" className="hover:underline">johnloydglee26@gmail.com</a>
           </p>
-          <p className="text-neutral-700 dark:text-neutral-300">
+          <p className="text-neutral-200 dark:text-neutral-300">
             Phone: <a href="tel:+639513520909" className="hover:underline">(+63) 951-352-0909</a>
           </p>
-          <p className="text-neutral-700 dark:text-neutral-300">
+          <p className="text-neutral-200 dark:text-neutral-300">
             Location: Floridablanca, Pampanga
           </p>
         </div>
 
         {/* Social Links */}
         <div className="text-left md:text-right space-y-2">
-          <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-100">
+          <h2 className="text-xl font-bold text-orange-500 dark:text-neutral-100">
             Follow Me
           </h2>
 
           <a
             href="https://www.linkedin.com/in/john-lloyd-glee-35123020a/"
-            className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition"
+            className="flex items-center gap-2 text-neutral-200 dark:text-text-orange-400 hover:text-orange-400 dark:hover:text-orange-400 transition"
             target="_blank"
           >
             <svg
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
 
           <a
             href="https://github.com/Pataja-dev"
-            className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition"
+            className="flex items-center gap-2 text-neutral-200 dark:text-neutral-300 hover:text-orange-500 dark:hover:text-orange-500 transition"
             target="_blank"
           >
             <svg

@@ -13,11 +13,13 @@
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.57.4",
     "clsx": "^2.1.1",
+    "drizzle-orm": "^0.44.5",
     "flowbite-react": "^0.10.2",
     "lucide-react": "^0.543.0",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "resend": "^6.0.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",

@@ -3,7 +3,7 @@ import '../app/globals.css';
 import Image from "next/image";
 import Navbar from "@/ui/app/navbar";
 import Footer from "@/ui/app/footer";
-import { Mail, Phone, MapPin, Globe } from "lucide-react";
+import { Mail, Phone, MapPin, Globe, Download } from "lucide-react";
 
 export default function Home() {
   return (
@@ -23,21 +23,29 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
               John Lloyd Glee
             </h1>
-            <p className="mt-6 text-lg text-neutral-600 font-medium">
+            <p className="mt-6 text-lg text-neutral-600 font-medium dark:text-neutral-100">
               Intern Software Developer @ Tito Solutions
             </p>
             <div className="mt-8 flex justify-center md:justify-start gap-4">
               <a
                 href="#project"
-                className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-6 rounded-xl transition shadow-sm"
+                className="bg-zinc-500 hover:bg-zinc-400 text-white font-semibold py-3 px-6 rounded-xl transition shadow-sm"
               >
                 View Projects
               </a>
               <a
                 href="#contact"
-                className="border border-neutral-300 hover:border-neutral-500 text-neutral-800 font-semibold py-3 px-6 rounded-xl transition"
+                className="dark:text-neutral-100 border border-neutral-300 hover:border-neutral-500 text-neutral-800 font-semibold py-3 px-6 rounded-xl transition"
               >
                 Contact
+              </a>
+              <a
+                href="/cv.pdf"
+                download="John-Lloyd-Glee-CV.pdf"
+                className="bg-zinc-700 hover:bg-zinc-600 text-white font-semibold py-3 px-6 rounded-xl transition shadow-sm flex items-center"
+              >
+                CV
+                <Download className="pb-1 inline-block w-5 h-5 ml-2" />
               </a>
             </div>
           </div>
@@ -74,7 +82,7 @@ export default function Home() {
               SDLC Agile Scrum methodologies for effective project management.
             </p>
             <h3 className="text-3xl font-bold mt-10">About Portfolio</h3>
-            <p className="mt-4 leading-relaxed text-neutral-700">
+            <p className="mt-4 leading-relaxed dark:text-neutral-100 text-neutral-700">
               This portfolio showcases a collection of my most impactful
               projects and highlights my skills and experience in web
               development. I&apos;m passionate about creating user-friendly
@@ -115,7 +123,7 @@ export default function Home() {
               <h3 className="text-2xl font-semibold mt-6">
                 Alternative Learning System LMS
               </h3>
-              <p className="mt-3 text-neutral-600">
+              <p className="mt-3 text-neutral-600 dark:text-neutral-100 leading-relaxed">
                 A learning management system built for the Alternative Learning
                 System of Sison District in Pangasinan II District V.
               </p>
@@ -132,7 +140,7 @@ export default function Home() {
             <h2 className="text-5xl font-bold text-center md:text-left">
               Thank You
             </h2>
-            <p className="mt-6 leading-relaxed text-neutral-700 text-center md:text-left">
+            <p className="dark:text-neutral-100 mt-6 leading-relaxed text-neutral-700 text-center md:text-left">
               Thank you for visiting my online portfolio! I truly appreciate you
               taking the time to explore my work and learn more about my
               background, skills, and projects. Whether you&apos;re a potential
@@ -159,7 +167,7 @@ export default function Home() {
           className="py-20 border-t border-neutral-200 text-center"
         >
           <h2 className="text-5xl font-bold mb-10">Contact</h2>
-          <p className="max-w-2xl mx-auto text-neutral-700 leading-relaxed mb-10">
+          <p className="dark:text-neutral-100 max-w-2xl mx-auto text-neutral-700 leading-relaxed mb-10">
             I&apos;d love to connect with you! Whether you have a project in
             mind, are interested in collaborating, or simply want to learn more
             about my work, feel free to reach out.
@@ -183,6 +191,18 @@ export default function Home() {
               <span>Lambingan St., Floridablanca, Pampanga</span>
             </div>
           </div>
+        </section>
+        <section
+          id=""
+          className="py-20 border-t border-neutral-200 text-center"
+        >
+          <a
+                href="/contact"
+                className="bg-zinc-500 hover:bg-zinc-400 text-white font-semibold py-5 px-10 rounded-xl transition shadow-sm"
+              >
+                Get In Touch
+          </a>
+          {/* <h2 className="text-5xl font-bold mb-10">Contact</h2> */}
         </section>
       </div>
 
