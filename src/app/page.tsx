@@ -3,7 +3,10 @@ import '../app/globals.css';
 import Image from "next/image";
 import Navbar from "@/ui/app/navbar";
 import Footer from "@/ui/app/footer";
-import { Mail, Phone, MapPin, Globe, Download } from "lucide-react";
+import { Mail, Phone, MapPin, Globe, } from "lucide-react";
+import { CvButton } from './button/cv';
+
+// CV Dropdown Button Component
 
 export default function Home() {
   return (
@@ -39,14 +42,7 @@ export default function Home() {
               >
                 Contact
               </a>
-              <a
-                href="/cv.pdf"
-                download="John-Lloyd-Glee-CV.pdf"
-                className="bg-zinc-700 hover:bg-zinc-600 text-white font-semibold py-3 px-6 rounded-xl transition shadow-sm flex items-center"
-              >
-                CV
-                <Download className="pb-1 inline-block w-5 h-5 ml-2" />
-              </a>
+              <CvButton />
             </div>
           </div>
 
@@ -192,17 +188,15 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
-          id=""
-          className="py-20 border-t border-neutral-200 text-center"
-        >
+
+        {/* Get In Touch Button */}
+        <section className="py-20 border-t border-neutral-200 text-center">
           <a
-                href="/contact"
-                className="bg-zinc-500 hover:bg-zinc-400 text-white font-semibold py-5 px-10 rounded-xl transition shadow-sm"
-              >
-                Get In Touch
+            href="/contact"
+            className="bg-zinc-500 hover:bg-zinc-400 text-white font-semibold py-5 px-10 rounded-xl transition shadow-sm"
+          >
+            Get In Touch
           </a>
-          {/* <h2 className="text-5xl font-bold mb-10">Contact</h2> */}
         </section>
       </div>
 
