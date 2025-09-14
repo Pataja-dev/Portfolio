@@ -1,12 +1,11 @@
 'use client';
 import '../app/globals.css';
 import Image from "next/image";
-import Navbar from "@/ui/app/navbar";
-import Footer from "@/ui/app/footer";
+import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 import { Mail, Phone, MapPin, Globe, } from "lucide-react";
-import { CvButton } from './button/cv';
+import { CvButton } from '../components/ui/cv';
 
-// CV Dropdown Button Component
 
 export default function Home() {
   return (

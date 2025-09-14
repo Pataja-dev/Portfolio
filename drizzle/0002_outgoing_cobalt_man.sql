@@ -1,0 +1,1 @@
+ALTER TABLE "references" RENAME TO "resume_references";

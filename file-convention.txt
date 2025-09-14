@@ -1,0 +1,55 @@
+portfolio/
+│── drizzle/                # Drizzle ORM setup
+│   ├── schema.ts           # All database tables/entities
+│   ├── migrations/         # Auto-generated SQL migrations
+│   └── config.ts           # Drizzle config
+│
+│── src/
+│   ├── app/                # Next.js App Router (pages, routes, API)
+│   │   ├── layout.tsx      # Root layout
+│   │   ├── page.tsx        # Homepage
+│   │   ├── api/            # API routes
+│   │   │   ├── contact/    # Example: POST contact form
+│   │   │   ├── resume/     # Example: GET resume data
+│   │   │   └── test-db/    # Test DB connection route
+│   │   └── (routes)/       # Grouped routes for clarity
+│   │       ├── projects/   # /projects page
+│   │       ├── about/      # /about page
+│   │       └── cv/         # /cv download/open
+│   │
+│   ├── components/         # Reusable React components
+│   │   ├── ui/             # Low-level UI primitives (Button, Card, etc.)
+│   │   ├── layout/         # Layout components (Navbar, Footer, Sidebar)
+│   │   ├── sections/       # Page sections (Hero, SkillsSection, etc.)
+│   │   └── forms/          # Form components (ContactForm)
+│   │
+│   ├── db/                 # Database utilities
+│   │   ├── db.ts           # Drizzle db instance
+│   │   ├── seed.ts         # Seeder script
+│   │   └── testConnection.ts
+│   │
+│   ├── lib/                # Helper functions & utilities
+│   │   ├── email.ts        # Resend email handler
+│   │   ├── formatters.ts   # Format dates, strings, etc.
+│   │   └── constants.ts    # App-wide constants
+│   │
+│   ├── styles/             # Tailwind/global styles
+│   │   └── globals.css
+│   │
+│   ├── types/              # TypeScript types/interfaces
+│   │   ├── db.ts           # Types inferred from Drizzle schema
+│   │   └── resume.ts       # DTOs for resume, projects, etc.
+│   │
+│   └── hooks/              # Custom React hooks
+│       ├── useContactForm.ts
+│       └── useResume.ts
+│
+│── public/
+│   ├── cv.pdf              # Public CV file
+│   └── images/             # Static images (logo, profile pic, etc.)
+│
+│── .env                    # Supabase, Resend keys, etc.
+│── drizzle.config.ts       # Drizzle CLI config
+│── tailwind.config.ts
+│── tsconfig.json
+│── package.json
