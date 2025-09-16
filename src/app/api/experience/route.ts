@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db/db";
-import { experience } from "../../../../drizzle/schema";
-import { supabase } from "@/lib/supabaseClient";
+import { experience } from "../../../../drizzle/schema"; 
+import { supabaseServer } from "@/lib/supabaseServer";
 
 // GET all experiences
 export async function GET() {
@@ -22,17 +22,17 @@ export async function POST(req: Request) {
     const {
       data: { user },
       error: userError,
-    } = await supabase.auth.getUser();
+    } = await supabaseServer.auth.getUser();
 
     if (userError || !user) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    // ✅ Insert into DB
+    // ✅ Insert into DB (user_id is taken from supabase user.id)
     const newExp = await db
       .insert(experience)
-      .values({
-        user_id: body.user_id, // make sure to pass user_id from frontend
+      .values({// 🔑 from Supabase Auth
+        user_id: 2,
         company: body.company,
         role: body.role,
         location: body.location,
@@ -48,3 +48,4 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Failed to add experience" }, { status: 500 });
   }
 }
+

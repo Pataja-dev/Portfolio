@@ -5,11 +5,16 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { Mail, Phone, MapPin, Globe, } from "lucide-react";
 import { CvButton } from '../components/ui/cv';
+import { useUser } from './hooks/user/useUser';
+import { useGetExperiences } from './hooks/experience/useGetExperience';
 
 
 export default function Home() {
+  const { user, loadingUser } = useUser()
+  const { data: exp, loading, error } = useGetExperiences();
+
   return (
-    <div className="bg-slate-300 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 scroll-smooth">
+    <div  id="home" className="bg-slate-300 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 scroll-smooth">
       {/* Sticky Navbar */}
       <Navbar />
 
@@ -17,17 +22,21 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-6 py-0">
         {/* Hero Section */}
         <section
-          id="home"
-          className="py-20 flex flex-col md:flex-row items-center gap-12"
+          
+          className="py-2 flex flex-col md:flex-row items-center gap-12"
         >
           {/* Text Column */}
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
-              John Lloyd Glee
+              {user?.full_name}
             </h1>
-            <p className="mt-6 text-lg text-neutral-600 font-medium dark:text-neutral-100">
-              Intern Software Developer @ Tito Solutions
+              {exp.map((exp) => (
+            <p key={exp.id} className="mt-6 text-lg text-neutral-600 font-medium dark:text-neutral-100">
+              
+                  {exp.role} @ {exp.company} 
+                 
             </p>
+          ))}
             <div className="mt-8 flex justify-center md:justify-start gap-4">
               <a
                 href="#project"
@@ -198,7 +207,7 @@ export default function Home() {
           </a>
         </section>
       </div>
-
+      
       {/* Footer */}
       <Footer />
     </div>

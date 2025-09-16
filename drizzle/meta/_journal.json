@@ -29,6 +29,20 @@
       "when": 1757857357595,
       "tag": "0003_tan_archangel",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1757935278378,
+      "tag": "0004_demonic_shadowcat",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1757935839891,
+      "tag": "0005_smart_boom_boom",
+      "breakpoints": true
     }
   ]
 }
