@@ -10,9 +10,6 @@ import { useGetExperiences } from './hooks/experience/useGetExperience';
 
 
 export default function Home() {
-  const { user, loadingUser } = useUser()
-  const { data: exp, loading, error } = useGetExperiences();
-
   return (
     <div  id="home" className="bg-slate-300 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 scroll-smooth">
       {/* Sticky Navbar */}
@@ -28,13 +25,11 @@ export default function Home() {
           {/* Text Column */}
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
-              {user?.full_name?? "John Lloyd Glee"}
+              John Lloyd Glee
             </h1>
-              {exp.map((exp) => (
-            <p key={exp.id} className="mt-6 text-lg text-neutral-600 font-medium dark:text-neutral-100">
-                  {exp.role?? "Intern Software Developer"} @ {exp.company?? "Tito Solutions PH Inc."} 
+            <p className="mt-6 text-lg text-neutral-600 font-medium dark:text-neutral-100">
+                  Intern Software Developer @ Tito Solutions PH Inc. 
             </p>
-          ))}
             <div className="mt-8 flex justify-center md:justify-start gap-4">
               <a
                 href="#project"
