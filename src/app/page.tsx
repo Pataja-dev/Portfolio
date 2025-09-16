@@ -28,12 +28,12 @@ export default function Home() {
           {/* Text Column */}
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
-              {user?.full_name}
+              {user?.full_name?? "John Lloyd Glee"}
             </h1>
               {exp.map((exp) => (
             <p key={exp.id} className="mt-6 text-lg text-neutral-600 font-medium dark:text-neutral-100">
               
-                  {exp.role} @ {exp.company} 
+                  {exp.role?? "Intern Software Developer"} @ {exp.company?? "Tito Solutions PH Inc."} 
                  
             </p>
           ))}
