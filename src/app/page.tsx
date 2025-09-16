@@ -32,9 +32,7 @@ export default function Home() {
             </h1>
               {exp.map((exp) => (
             <p key={exp.id} className="mt-6 text-lg text-neutral-600 font-medium dark:text-neutral-100">
-              
                   {exp.role?? "Intern Software Developer"} @ {exp.company?? "Tito Solutions PH Inc."} 
-                 
             </p>
           ))}
             <div className="mt-8 flex justify-center md:justify-start gap-4">
